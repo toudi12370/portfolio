@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 1;
+      padding: 1;
+    }
+
+    .slider_container {
+      width: 100%;
+      max-width: 1760px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      margin: 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 단일 이미지에서 마진 제거 */
+    .single_image {
+      display: block;
+      text-align: center;
+      margin: 1; /* 마진 제거 */
+    }
+
+    /* 도트 스타일 */
+    .swiper-pagination-bullet {
+      background: black; /* 기본 도트 색상 */
+    }
+
+    .swiper-pagination-bullet-active {
+      background: grey; /* 활성 도트 색상 */
+    }
+
+    /* 태블릿 전용 이미지 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .display_tablet_only {
+        display: block;
+      }
+    }
+
+    /* 데스크탑에서 숨김 */
+    @media (min-width: 1025px) {
+      .display_tablet_only {
+        display: none;
+      }
+    }
+
+    /* 모바일에서 숨김 */
+    @media (max-width: 767px) {
+      .display_tablet_only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 단일 이미지 -->
+  <div class="single_image">
+    <img src="https://creashd.cafe24.com/showcase/241230_GOOSE_PC_1_.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+  </div>
+
+  <br>
+    <!-- 단일 이미지 -->
+    <div class="single_image">
+      <a href="https://creashd.cafe24.com/product/%EC%9C%A0%EB%8B%88-%ED%95%98%EC%9D%B4%EB%93%9C%EB%A1%9C%EA%B2%90-%EA%B7%B8%EB%A1%9C%EC%8B%9C-%EB%8B%A4%EC%9A%B4%EC%9E%90%EC%BC%93/1948/category/303/display/1/">
+      <img src="https://creashd.cafe24.com/showcase/241230_GOOSE_PC_2__.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+    </div>
+ 
+
+      <!-- 단일 이미지 -->
+  <div class="single_image">
+    <a href="https://creashd.cafe24.com/product/%EC%9C%A0%EB%8B%88-%ED%83%80%EC%9D%B4%ED%83%84-%ED%97%A4%EB%B9%84-%EB%8B%A4%EC%9A%B4-%EC%9E%90%EC%BC%93/1953/category/303/display/1/">
+    <img src="https://creashd.cafe24.com/showcase/241230_GOOSE_PC_3__.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+  </div>
+</a>
+
+    <!-- 단일 이미지 -->
+    <div class="single_image">
+      <a href="https://creashd.cafe24.com/product/%EC%9C%A0%EB%8B%88-%EC%95%A1%ED%8B%B0%EB%B8%8C-%EA%B5%AC%EC%8A%A4-%EC%A4%91%ED%97%A4%EB%B9%84-%EB%8B%A4%EC%9A%B4-%EC%9E%90%EC%BC%93/1912/category/303/display/1/">
+      <img src="https://creashd.cafe24.com/showcase/241230_GOOSE_PC_4__.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+    </div>
+  </a>
+  
+  
+
+ 
+  
+  
+ 
+
+</body>
+</html>
