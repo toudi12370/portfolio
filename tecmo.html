@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider_container {
+      width: 100%;
+      max-width: 1760px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      margin: 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 단일 이미지에서 마진 제거 */
+    .single_image {
+      display: block;
+      text-align: center;
+      margin: 0; /* 마진 제거 */
+    }
+
+    /* 도트 스타일 */
+    .swiper-pagination-bullet {
+      background: black; /* 기본 도트 색상 */
+    }
+
+    .swiper-pagination-bullet-active {
+      background: grey; /* 활성 도트 색상 */
+    }
+
+    /* 태블릿 전용 이미지 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .display_tablet_only {
+        display: block;
+      }
+    }
+
+    /* 데스크탑에서 숨김 */
+    @media (min-width: 1025px) {
+      .display_tablet_only {
+        display: none;
+      }
+    }
+
+    /* 모바일에서 숨김 */
+    @media (max-width: 767px) {
+      .display_tablet_only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 단일 이미지 -->
+  <div class="single_image">
+    <img src="https://creashd.cafe24.com/showcase/down241125_MO1_.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+  </div>
+    <!-- 단일 이미지 -->
+    <div class="single_image">
+        <img src="https://creashd.cafe24.com/showcase/down241125_MO2.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+      </div>
+        <!-- 단일 이미지 -->
+  <div class="single_image">
+    <img src="https://creashd.cafe24.com/showcase/down241125_MO3.jpg" alt="단일 이미지" style="width: 100%; max-width: 1760px; height: auto;">
+  </div>
+
+
+  
+
+ 
+  
+  
+  <!-- 스크립트 부분 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+  <script>
+    window.onload = function() {
+      const swiper1 = new Swiper('#slider1', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        touchRatio: 1,
+        threshold: 10,
+      });
+
+      const swiper2 = new Swiper('#slider2', {
+        loop: true,
+        autoplay: {
+          delay: 6000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        touchRatio: 1,
+        threshold: 10,
+      });
+
+      const swiper3 = new Swiper('#slider3', {
+        loop: true,
+        autoplay: {
+          delay: 6000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        touchRatio: 1,
+        threshold: 10,
+      });
+
+      const swiper4 = new Swiper('#slider4', {
+        loop: true,
+        autoplay: {
+          delay: 6000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        touchRatio: 1,
+        threshold: 10,
+      });
+    };
+  </script>
+
+</body>
+</html>
