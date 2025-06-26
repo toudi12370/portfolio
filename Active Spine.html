@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .upslide {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .upslide.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 시간차 애니메이션 */
+    .upslide.delay0.visible { transition-delay: 0s; }
+    .upslide.delay1.visible { transition-delay: 0.4s; }
+    .upslide.delay2.visible { transition-delay: 0.8s; }
+    .upslide.delay3.visible { transition-delay: 1.2s; }
+
+    /* 반응형 디스플레이 설정 */
+    .display_pc_only { display: none; }
+    .display_tablet_only { display: none; }
+
+    @media (min-width: 1024px) {
+      .display_pc_only { display: block; }
+    }
+
+    @media (max-width: 721px) {
+      .display_tablet_only { display: block; }
+    }
+
+    /* 이미지 정렬 */
+    .image-block {
+      position: relative;
+      max-width: 1760px;
+      margin: 0 auto;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-block .layered {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<!-- (PC용) -->
+
+<!-- (영상) -->
+<div class="display_pc_only" style="text-align:center;">
+  <div style="max-width: 1760px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://player.vimeo.com/video/1094633966?autoplay=1&muted=1&loop=1&background=1"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- 시간차 애니메이션 인트로-->
+<div class="display_pc_only" style="position: relative; max-width: 1760px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro_bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro_1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro_2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro_3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+</div>
+
+<!-- 시간차 애니메이션 1-->
+<div class="display_pc_only" style="position: relative; max-width: 1760px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_4_bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_4-1.png"
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_4-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_4-3.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 2-->
+<div class="display_pc_only" style="position: relative; max-width: 1760px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_5_bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_5-1.png"
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_5-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+    <!-- 텍스트 이미지 3 -->
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_5-3.png"
+    class="upslide delay1"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 3-->
+<div class="display_pc_only" style="position: relative; max-width: 1760px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_6_bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_6-1.png"
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_6-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+    <!-- 텍스트 이미지 3 -->
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_6-3_.png"
+    class="upslide delay1"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<div class="display_pc_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_7.png" style="width: 1760px; height: auto;">
+</div>
+
+
+
+
+  <!-- (모바일용) -->
+
+<!-- 영상 -->
+<div class="display_tablet_only" style="text-align:center;">
+  <div style="max-width: 1760px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://player.vimeo.com/video/1094633966?autoplay=1&muted=1&loop=1&background=1"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- 시간차 애니메이션 인트로-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_pc_intro-3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 1-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_1-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_1-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_1-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_1-3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 2-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_2-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_2-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_2-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_2-3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+    <!-- 텍스트 이미지 3 -->
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_2-4.png"
+    class="upslide delay2"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 3-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_3-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_3-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_3-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_3-3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 4-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-3.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-4.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_4-5.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<!-- 시간차 애니메이션 5-->
+<div class="display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-bg.png"
+      style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 1 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-1.png" 
+      class="upslide delay0"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 2 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-2.png"
+      class="upslide delay1"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-3_.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-4.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+
+  <!-- 텍스트 이미지 3 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_5-5.png"
+      class="upslide delay2"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250624_mo_6.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // 한 번만 실행
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    const images = document.querySelectorAll("img.upslide, .display_pc_only img, .display_tablet_only img");
+
+    images.forEach((img) => {
+      const isInSlide = img.closest(".swiper-slide");
+
+      if (!img.classList.contains("upslide") && !isInSlide) {
+        img.classList.add("upslide");
+      }
+
+      if (!isInSlide) {
+        observer.observe(img);
+      }
+    });
+
+    // Swiper 초기화 (필요할 경우)
+    const swiper = new Swiper(".autoSwiper", {
+      loop: true,
+      loopAdditionalSlides: 1,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+</body>
+</html>

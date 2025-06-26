@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모바일 배경만 있는 페이지</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .display_pc_only { display: block; }
+    .display_tablet_only { display: none; }
+
+    @media screen and (max-width: 720px) {
+      .display_pc_only { display: none !important; }
+      .display_tablet_only { display: block !important; }
+    }
+
+    /* PC 스타일 */
+    .background {
+      width: 1760px;
+      margin: 0 auto;
+    }
+
+    .slider_container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* 모바일 스타일 */
+    .mobile-background {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .mobile-background img {
+  width: 100%;  /* 부모 요소에 맞춰서 이미지 크기 조정 */
+  height: auto; /* 비율 유지하면서 높이 자동 조정 */
+  object-fit: contain; /* 이미지 비율을 유지하면서 잘리지 않게 설정 */
+  display: block;
+  margin: 0; /* 이미지 사이의 여백 없애기 */
+}
+  </style>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- PC 버전 -->
+  <div class="background display_pc_only">
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_00.jpg" width="1760" border="0" alt="">
+
+    <a href="https://mammut.kr/product/%ED%8E%98%EB%8D%94%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%9E%90%EC%BC%93-m31e5jk101iv/1024/category/23/display/1/">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_1-2.jpg" width="1760" height="1000" border="0" alt="">
+    </a>
+
+    <div class="slider_container">
+      <div class="swiper slider_wrapper" id="slider1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_2-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://mammut.kr/product/search.html?banner_action=&keyword=%EC%BB%A8%EB%B2%A0%EC%9D%B4">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_3__.jpg" width="1760" height="1000" border="0" alt="">
+    </a>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_4-1.jpg" width="1760" border="0" alt="">
+
+  </div>
+
+  <!-- 모바일 버전 -->
+  <div class="mobile-background display_tablet_only">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_00.jpg" width="720" height="1000" alt="">
+
+<!-- 단락1 자동 슬라이드 영역 (좌우 스와이핑 적용) -->
+<div class="slider_container">
+  <div class="swiper slider_wrapper" id="slider_mo1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_2-1.jpg" width="720" height="1000" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_2-2.jpg" width="720" height="1000" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_2-3.jpg" width="720" height="1000" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- 단락2 상품연동 -->
+    <a href="https://mammut.kr/product/%ED%8E%98%EB%8D%94%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%9E%90%EC%BC%93-m31e5jk101iv/1024/category/23/display/1/">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_1-1.jpg" width="720" height="1000" border="0" alt="">
+    </a>
+
+
+<!-- 단락3 자동 슬라이드 영역 (좌우 스와이핑 적용) -->
+<div class="slider_container">
+  <div class="swiper slider_wrapper" id="slider_mo4">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_5-1.jpg" width="720" height="1000" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_5-2.jpg" width="720" height="1000" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- 단락4 상품연동 -->
+    <a href="https://mammut.kr/product/search.html?banner_action=&keyword=%EC%BB%A8%EB%B2%A0%EC%9D%B4">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_4.jpg" width="720" height="1000" border="0" alt="">
+    </a>
+
+        <!-- 단락5 슬라이더 이미지 -->
+        <div class="slider_container">
+          <div class="swiper slider_wrapper" id="slider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_3-1.jpg" width="720" height="1000" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_3-2.jpg" width="720" height="1000" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250410_mo_6-1.jpg" width="720" height="1000" alt="">
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Swiper 초기화 -->
+  <script>
+    const swiper1 = new Swiper('#slider1', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      effect: 'fade'
+    });
+
+    const swiper2 = new Swiper('#slider2', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      effect: 'fade'
+    });
+
+    const swiperMo1 = new Swiper('#slider_mo1', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  effect: 'slide', // 기본 스와이프 효과
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperMo4 = new Swiper('#slider_mo4', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  effect: 'slide', // 기본 스와이프 효과
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+  </script>
+</body>
+</html>

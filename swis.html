@@ -1,0 +1,318 @@
+  <!-- 마무트 기본  -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 0; /* 전체 바디 마진 제거 */
+      padding: 0; /* 전체 바디 패딩 제거 */
+    }
+
+    .slider_container {
+      width: 100%;
+      max-width: 1760px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+/* 업슬라이드 효과 */
+.upslide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.upslide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+    .swiper-slide {
+      width: 100%; /* 전체 폭을 100%로 설정 */
+}
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 화살표 스타일 */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      z-index: 10;
+    }
+
+    .left_arrow1 {
+      left: 10px;
+    }
+
+    .right_arrow1 {
+      right: 10px;
+    }
+
+    .left_arrow2 {
+      left: 10px;
+    }
+
+    .right_arrow2 {
+      right: 10px;
+    }
+
+    /* PC 전용 */
+    .display_pc_only {
+      display: none;
+    }
+
+    /* 모바일 전용 */
+    .slider_container .display_tablet_only {
+      display: none;
+    }
+
+    /* 반응형 처리 */
+    @media (min-width: 1024px) {
+      .display_pc_only {
+        display: block;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .slider_container display_tablet_only {
+        display: block;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+<!-- (PC용) -->
+
+<!-- (1단락) 배경 + 텍스트 이미지 with upslide -->
+<div class="display_pc_only" style="position: relative; max-width: 1760px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_1-1.png" style="width: 100%; height: auto; display: block;">
+
+  <!-- 텍스트 이미지 (위에 겹치고 애니메이션) -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_1_.png"
+       class="upslide"
+       style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_2.png" style="width: 1760px; height: auto;">
+  </div>
+
+<!-- (영상1) -->
+<div class="display_pc_only" style="text-align:center;">
+  <div style="max-width: 1760px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://www.youtube.com/embed/988tiEYb_0I?autoplay=1&mute=1&controls=0&loop=1&playlist=988tiEYb_0I"
+        title="YouTube video player"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_4.png" style="width: 1760px; height: auto;">
+  </div>
+<!-- (영상2) -->
+<div class="display_pc_only" style="text-align:center;">
+  <div style="max-width: 1760px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://www.youtube.com/embed/WohFgAKBbVw?autoplay=1&mute=1&controls=0&loop=1&playlist=WohFgAKBbVw"
+        title="YouTube video player"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_5.png" style="width: 1760px; height: auto;">
+  </div>
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_6.png" style="width: 1760px; height: auto;">
+  </div>
+  
+  <div class="display_pc_only" style="text-align:center;">
+  <a href="https://www.myswitzerland.com/ko/microsites/international/with-unexpected-ease-and-a-view-of-the-matterhorn/#InpageNavigation1_0">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_pc_7.png" alt="">
+    </a>
+  </div>
+
+
+  <!-- (모바일용) -->
+
+<!-- 배경 + 텍스트 이미지 with upslide -->
+<div class="slider_container display_tablet_only" style="position: relative; max-width: 720px; margin: 0 auto;">
+  <!-- 배경 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_1-1.png" style="width: 100%; height: auto; display: block;">
+  <!-- 텍스트 이미지 -->
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_1-2_.png"
+       class="upslide"
+       style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_2-1.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_2-2.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+
+<!-- (영상1) -->
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <div style="max-width: 720px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://www.youtube.com/embed/988tiEYb_0I?autoplay=1&mute=1&controls=0&loop=1&playlist=988tiEYb_0I"
+        title="YouTube video player"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- 슬라이드 영역 -->
+<div class="slider_container display_tablet_only">
+  <div class="swiper autoSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_4-1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_4-2.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_5-1-1.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_5-2.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_5-3.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+
+<!-- (영상2) -->
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <div style="max-width: 720px; width: 100%; margin: 0 auto;">
+    <div style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 비율 */">
+      <iframe
+        src="https://www.youtube.com/embed/WohFgAKBbVw?autoplay=1&mute=1&controls=0&loop=1&playlist=WohFgAKBbVw"
+        title="YouTube video player"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_6-1-1.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_6-2-1.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_6-5_.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_6-6.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_7.png" class="upslide" style="width: 720px; height: auto;">
+</div>
+
+<div class="slider_container display_tablet_only" style="text-align:center;">
+  <a href="https://www.myswitzerland.com/ko/microsites/international/with-unexpected-ease-and-a-view-of-the-matterhorn/#InpageNavigation1_0">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mmt_250512_mo_8.png" alt=""class="upslide">
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 모든 업슬라이드 대상 이미지 선택 (PC, 모바일, 자동 슬라이드 포함)
+      const images = document.querySelectorAll("img.upslide, .display_pc_only img, .display_tablet_only img");
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, {
+        threshold: 0.1,
+      });
+  
+      images.forEach((img) => {
+        // 슬라이드 영역(.swiper-slide) 내부 이미지 제외
+        const isInSlide = img.closest(".swiper-slide");
+  
+        // upslide 클래스가 없고 슬라이드 내부가 아닐 때만 추가
+        if (!img.classList.contains("upslide") && !isInSlide) {
+          img.classList.add("upslide");
+        }
+  
+        // 슬라이드 영역 내부 이미지에는 observer 적용하지 않음
+        if (!isInSlide) {
+          observer.observe(img);
+        }
+      });
+  
+      const swiper = new Swiper(".autoSwiper", {
+        loop: true,
+        loopAdditionalSlides: 1,
+        slidesPerView: 1,  // 슬라이드가 하나씩 보이도록 설정
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+
+</body>
+</html>
