@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider_container {
+      width: 100%;
+      max-width: 1760px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      margin: 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 페이지네이션 스타일 - 기본 색상 grey, 활성화된 dot은 black */
+    .swiper-pagination-bullet {
+      background-color: grey; /* 기본 dot 색상 */
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: black; /* 활성화된 dot 색상 */
+    }
+
+    /* 페이지네이션을 중앙에 배치 */
+    .swiper-pagination {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 단일 이미지 -->
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://creashd.cafe24.com/showcase/241219_SKI_PC1____.jpg" style="width: 1760px; height: auto;">
+  </div>
+ <!-- 단일 이미지 -->
+ <div class="display_pc_only" style="text-align:center;">
+  <img src="https://creashd.cafe24.com/showcase/241219_SKI_PC2_.jpg" style="width: 1760px; height: auto;">
+</div>
+ <!-- 단일 이미지 -->
+ <div class="display_pc_only" style="text-align:center;">
+    <img src="https://creashd.cafe24.com/showcase/241219_SKI_PC3__1.jpg" style="width: 1760px; height: auto;">
+  </div>
+   <!-- 단일 이미지 -->
+ <div class="display_pc_only" style="text-align:center;">
+    <img src="https://creashd.cafe24.com/showcase/241219_SKI_PC3__2.jpg" style="width: 1760px; height: auto;">
+  </div>
+
+ 
+
+  
+
+  
+
+  <!-- 스크립트 부분 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+  <script>
+    const swiper1 = new Swiper('#slider1', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    const swiper2 = new Swiper('#slider2', {
+      loop: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    const swiper3 = new Swiper('#slider3', {
+      loop: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    const swiper4 = new Swiper('#slider4', {
+      loop: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>
