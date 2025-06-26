@@ -1,0 +1,38 @@
+<style>
+/* 기본적으로 PC 버전은 보이고, 모바일 버전은 숨김 */
+.display_pc_only { display: block; }
+.display_tablet_only { display: none; }
+
+/* 768px 이하(태블릿 & 모바일)에서는 PC 버전 숨기고 모바일 버전 표시 */
+@media screen and (max-width: 768px) {
+    .display_pc_only { display: none !important; }
+    .display_tablet_only { display: block !important; }
+}
+</style>
+
+<!-- PC 버전 -->
+<div style="text-align:center;" class="display_pc_only project_banner">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_1_.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_2__.png">
+    <div class="banner_video">
+        <div class="dim_layer"></div>
+        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/uGOA-gGnWZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=uGOA-gGnWZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_3__.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_4-2__.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_6-3_.png">
+</div>
+
+<!-- 모바일 & 태블릿 버전 -->
+<div style="text-align:center;" class="display_tablet_only project_banner">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_mo_1.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_mo_2_.png">
+    <div class="banner_video">
+        <div class="dim_layer"></div>
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/uGOA-gGnWZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=uGOA-gGnWZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_mo_3_.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_mo_4_1_.png">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250317_Aenergy_mo_5.png">
+</div>
