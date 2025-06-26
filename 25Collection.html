@@ -1,0 +1,122 @@
+<!-- PC 버전 -->
+<div style="text-align:center;" class="display_pc_only project_banner">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_1.jpg" style="width: 100%; max-width: 1920;">
+
+    <!-- //banner_video1 -->
+    <div class="banner_video">
+        <div class="dim_layer"></div>
+        <iframe width="1920" height="998" src="https://www.youtube.com/embed/PwUFvFTFfo4?autoplay=1&mute=1&controls=0&loop=1&playlist=PwUFvFTFfo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_2.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_3_0.jpg" style="width: 100%; max-width: 1920;">
+
+    <!-- 이미지 슬라이드 -->
+    <div class="slider" style="max-width: 1920;">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_4.jpg" class="slide active">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_4-1.jpg" class="slide">
+    </div>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_5_0.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_6.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_7.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_8.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_9.jpg" style="width: 100%; max-width: 1920;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_pc_10.jpg" style="width: 100%; max-width: 1920;">
+</div>
+
+<!-- 모바일 버전 (최대 720px) -->
+<div style="text-align:center; display:none;" class="display_mobile_only project_banner">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_1.jpg" style="width: 100%; max-width: 720px;">
+
+
+    <iframe style="width: 100%; max-width: 720px; height: 680px;" src="https://www.youtube.com/embed/8A2cqZwUlVk?&autoplay=1&mute=1&controls=0&loop=1&playlist=8A2cqZwUlVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_2.jpg" style="width: 100%; max-width: 720px;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_3.jpg" style="width: 100%; max-width: 720px;">
+
+    <!-- 모바일 이미지 슬라이드 1-->
+    <div class="slider" style="max-width: 720px;">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_4-1.jpg" class="slide active">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_4-2.jpg" class="slide">
+    </div>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_5.jpg" style="width: 100%; max-width: 720px;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_6.jpg" style="width: 100%; max-width: 720px;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_7.jpg" style="width: 100%; max-width: 720px;">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_8.jpg" style="width: 100%; max-width: 720px;">
+ 
+    <!-- 모바일 이미지 슬라이드 2-->
+    <div class="slider" style="max-width: 720px;">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_9-1.jpg" class="slide active">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_9-2.jpg" class="slide">
+    </div>
+
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250305_mo_10.jpg" style="width: 100%; max-width: 720px;">
+    
+</div>
+
+<!-- 스타일 추가 -->
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 100vh;  /* 화면 높이에 맞춰 슬라이드의 높이를 설정 */
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        object-fit: cover;  /* 이미지가 화면에 꽉 차도록 설정 */
+    }
+    .slide.active {
+        opacity: 1;
+    }
+
+    /* 첫 번째 슬라이드가 기본적으로 보이도록 설정 */
+    .slide:first-child {
+        opacity: 1;
+    }
+
+    /* 반응형 스타일 */
+    @media (max-width: 720px) {
+        .display_pc_only {
+            display: none;
+        }
+        .display_mobile_only {
+            display: block;
+        }
+
+        .slider {
+            max-width: 720px;
+            height: 500px;  /* 모바일 슬라이드 배너 높이 조정 */
+        }
+    }
+</style>
+
+<!-- 슬라이드 스크립트 (PC & 모바일 공통) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function initSlider(selector) {
+            let slides = document.querySelectorAll(selector + " .slide");
+            let currentIndex = 0;
+
+            function showNextSlide() {
+                slides[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add("active");
+            }
+
+            setInterval(showNextSlide, 2000);
+        }
+
+        initSlider(".display_pc_only .slider");
+        initSlider(".display_mobile_only .slider");
+    });
+</script>
