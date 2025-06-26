@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 0; /* 전체 바디 마진 제거 */
+      padding: 0; /* 전체 바디 패딩 제거 */
+    }
+
+    /* PC와 모바일 전용 이미지 스타일 */
+    .display_pc_only, .display_tablet_only {
+      text-align: center;
+    }
+
+    /* PC 전용 이미지 스타일 */
+    .display_pc_only img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 모바일 전용 이미지 스타일 */
+    .display_tablet_only img {
+      width: 100%; /* 화면에 맞게 이미지 크기 조정 */
+      height: auto;
+    }
+
+    /* PC 전용 (1024px 이상에서) */
+    @media (min-width: 1024px) {
+      .display_pc_only {
+        display: block;
+      }
+      .display_tablet_only {
+        display: none;
+      }
+    }
+
+    /* 모바일 전용 (1024px 이하에서) */
+    @media (max-width: 1024px) {
+      .display_pc_only {
+        display: none;
+      }
+      .display_tablet_only {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 단일 이미지 (PC용) -->
+  <div class="display_pc_only">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250203_specialoffer_pc0.jpg">
+  </div>
+
+  <!-- 단일 이미지 (모바일용) -->
+  <div class="display_tablet_only">
+    <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/250203_specialoffer_mo1.jpg">
+  </div>
+
+</body>
+</html>
