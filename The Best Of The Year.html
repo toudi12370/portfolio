@@ -1,0 +1,269 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
+  <title>Slider Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider_container {
+      width: 100%;
+      max-width: 1760px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      margin: 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 화살표 스타일 */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); /* 중앙 정렬 */
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      z-index: 10;
+    }
+
+    .left_arrow1, .right_arrow1,
+    .left_arrow2, .right_arrow2,
+    .left_arrow3, .right_arrow3
+    .left_arrow4, .right_arrow4 {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* 화살표가 항상 슬라이드 이미지에 맞춰 중앙 정렬되도록 */
+    .left_arrow1, .left_arrow2, .left_arrow3, .left_arrow4 {
+      left: 10px;
+    }
+
+    .right_arrow1, .right_arrow2, .right_arrow3, .right_arrow4 {
+      right: 10px;
+    }
+
+    /* PC 전용 */
+    .display_pc_only {
+      display: none;
+    }
+
+    /* 모바일 전용 */
+    .display_tablet_only {
+      display: none;
+    }
+
+    /* 반응형 처리 */
+    @media (min-width: 1024px) {
+      .display_pc_only {
+        display: block;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .display_tablet_only {
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+    <!-- 단일 이미지 (PC용) -->
+    <div class="display_pc_only" style="text-align:center;">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_001_.jpg" style="width: 1760px; height: auto;">  
+</div>
+    <div class="display_pc_only" style="text-align:center;">
+    <!-- 단일 이미지 (모바일용) -->
+    <div class="display_tablet_only" style="text-align:center;">
+      <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_001.jpg" style="width: 720px; height: auto;">
+   </div>
+   <div class="display_tablet_only" style="text-align:center;">
+   </div>
+  <!-- 첫 번째 슬라이딩 배너 -->
+  <div class="slider_container">
+    <button class="arrow left_arrow1">&#10094;</button>
+    <button class="arrow right_arrow1">&#10095;</button>
+
+    <div class="swiper slider_wrapper" id="slider1">
+      <div class="swiper-wrapper">
+        <!-- PC 이미지 -->
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_002.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_003_.jpg" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- 모바일 이미지 -->
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_002.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_003.jpg" style="width: 100%; height: auto;">
+      </div>
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_003_2_.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+        <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_004.jpg" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- 두 번째 슬라이딩 배너 -->
+  <div class="slider_container">
+    <button class="arrow left_arrow2">&#10094;</button>
+    <button class="arrow right_arrow2">&#10095;</button>
+
+    <div class="swiper slider_wrapper" id="slider2">
+      <div class="swiper-wrapper">
+        <!-- PC 이미지 -->
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_004.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_005.jpg" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- 모바일 이미지 -->
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_005.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_006.jpg" style="width: 100%; height: auto;">
+        </div>
+    <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_007.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_008.jpg" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 세 번째 슬라이딩 배너 -->
+  <div class="slider_container">
+    <button class="arrow left_arrow3">&#10094;</button>
+    <button class="arrow right_arrow3">&#10095;</button>
+
+    <div class="swiper slider_wrapper" id="slider3">
+      <div class="swiper-wrapper">
+        <!-- PC 이미지 -->
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_006.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_pc_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_PC_007.jpg" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- 모바일 이미지 -->
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_009.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_0010.jpg" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- 네 번째 슬라이딩 배너 -->
+  <div class="slider_container">
+    <button class="arrow left_arrow4">&#10094;</button>
+    <button class="arrow right_arrow4">&#10095;</button>
+
+    <div class="swiper slider_wrapper" id="slider4">
+      <div class="swiper-wrapper">
+
+        <!-- 모바일 이미지 -->
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_0011.jpg" style="width: 100%; height: auto;">
+        </div>
+        <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_0012.jpg" style="width: 100%; height: auto;">
+        </div>
+    <div class="swiper-slide display_tablet_only">
+          <img src="https://mammutofficial.openhost.cafe24.com/web/design/showcase/mammut_241118_MO_0013.jpg" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+  <script>
+    const swiper1 = new Swiper('#slider1', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+      },
+      navigation: {
+        nextEl: '.right_arrow1',
+        prevEl: '.left_arrow1',
+      },
+    });
+
+    const swiper2 = new Swiper('#slider2', { 
+      loop: true,
+      autoplay: {
+        delay: 6000,
+      },
+      navigation: {
+        nextEl: '.right_arrow2',
+        prevEl: '.left_arrow2',
+      },
+    });
+
+    const swipe3 = new Swiper('#slider3', { 
+      loop: true,
+      autoplay: {
+        delay: 8000,
+      },
+      navigation: {
+        nextEl: '.right_arrow3',
+        prevEl: '.left_arrow3',
+      },
+    });
+
+    const swipe4 = new Swiper('#slider4', { 
+      loop: true,
+      autoplay: {
+        delay: 10000,
+      },
+      navigation: {
+        nextEl: '.right_arrow4',
+        prevEl: '.left_arrow4',
+      },
+    });
+  </script>
+
+</body>
+</html>
