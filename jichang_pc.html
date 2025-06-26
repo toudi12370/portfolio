@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I수정본</title>
+    <style>
+        /* 공통 스타일 */
+        .image-slider {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .image-slider img.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .display_pc_only img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 인트로 이미지 -->
+  <div class="display_pc_only" style="text-align:center;">         
+    <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__1.jpg">
+  </div>
+    
+  <div class="display_pc_only" style="text-align:center;">
+    <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__2.jpg">  
+<!-- 영상 -->
+    <p align="middle"><iframe width="450" height="800" src="https://www.youtube.com/embed/8XH2vLutV1A?&autoplay=1&mute=1&controls=0&loop=1&playlist=8XH2vLutV1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    
+    <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__3.jpg">
+    </div>
+    
+    
+    
+     <!-- 첫 번째 슬라이더 -->
+     <div class="image-slider slider-one">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__4.jpg" alt="Image 1" class="active">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__5.jpg" alt="Image 2">
+    </div>
+
+    <!-- 슬라이더에 포함되지 않는 이미지 -->
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__6.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__7.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__8.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__9.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__10.jpg" alt="Static Image">
+    </div>
+
+    <!-- 두 번째 슬라이더 -->
+    <div class="image-slider slider-two">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__11.jpg" alt="Image 1" class="active">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__12_.jpg" alt="Image 2">
+    </div>
+
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__13.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__14.jpg" alt="Static Image">
+    </div>
+    <div class="display_pc_only">
+        <img src="https://creashd.cafe24.com/showcase/241126_JCW_WINTER__15_.jpg" alt="Static Image">
+    </div>
+
+
+    <script>
+        // 슬라이더 동작 함수
+        function startSlider(sliderClass, interval) {
+            const images = document.querySelectorAll(`.${sliderClass} img`);
+            let currentIndex = 0;
+
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }, interval);
+        }
+
+        // 첫 번째 슬라이더 동작
+        startSlider('slider-one', 1500);
+
+        // 두 번째 슬라이더 동작
+        startSlider('slider-two', 1500);
+    </script>
+</body>
+</html>
