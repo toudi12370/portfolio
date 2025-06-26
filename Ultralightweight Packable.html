@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이드 인 이미지</title>
+    <style>
+        .promo-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .promo-image {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        .slide-up {
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-container">
+        <img class="promo-image" src="https://creashd.cafe24.com/showcase/lightweight/240502_lw_pc_1_main.png" alt="Promo Image">
+    </div>
+    <div class="promo-container">
+        <img class="promo-image slide-up" src="https://creashd.cafe24.com/showcase/lightweight/240502_lw_pc_2.png" alt="Promo Image 2">
+    </div>
+    <div class="promo-container">
+        <img class="promo-image slide-up" src="https://creashd.cafe24.com/showcase/lightweight/240502_lw_pc_3.png" alt="Promo Image 3"> 
+    </div>
+
+
+    <a href="//hydrogenofficial.com/exec/front/newcoupon/IssueDownload?coupon_no=6081926921300312513">
+
+        <img src="https://creashd.cafe24.com/showcase/lightweight/240502_lw_pc_4_cp.png" width="1920" height="628" border="0" alt="">
+        </a>
+
+        <img class="promo-image slide-up" src="https://creashd.cafe24.com/showcase/lightweight/240502_lw_pc_5_cp.png" alt="Promo Image 3">
+    <script>
+        function fadeInOnScroll() {
+            const images = document.querySelectorAll(".promo-image");
+            images.forEach(image => {
+                const rect = image.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.9) {
+                    image.style.opacity = 1;
+                }
+            });
+
+            const slideImages = document.querySelectorAll(".slide-up");
+            slideImages.forEach(image => {
+                const rect = image.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.9) {
+                    image.style.opacity = 1;
+                    image.style.transform = "translateY(0)";
+                }
+            });
+        }
+        
+        document.addEventListener("scroll", fadeInOnScroll);
+        document.addEventListener("DOMContentLoaded", fadeInOnScroll);
+    </script>
+</body>
+</html>
