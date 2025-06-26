@@ -1,0 +1,245 @@
+<!-- pc버전 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marquee Responsive</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+      background: #fff;
+    }
+
+    .section {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      background: none;
+    }
+
+    .background-image,
+    .cover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .cover-image {
+      z-index: 3;
+    }
+
+    .marquee-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      z-index: 2;
+      white-space: nowrap;
+    }
+
+    .marquee-content {
+      display: inline-flex;
+      animation: marquee 50s linear infinite;
+    }
+
+    .marquee-content img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    section.section .marquee-content img[src$="bag2.png"] {
+      transform: translateY(50px);
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .section-upslide {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 1s ease-out;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      display: block;
+    }
+
+    .section-upslide.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section.section-marquee-5 .marquee-content img {
+      height: auto;
+      max-width: 100%;
+      display: block;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-spacing: 0;
+      background: none;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    td img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      td {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1단락 -->
+  <section class="section" style="height: 710px;">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_1_bg-1.png" class="background-image" alt="Background">
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_1_bag2.png" alt="Marquee">
+        <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_1_bag2.png" alt="Marquee repeat">
+        <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_1_bag2.png" alt="Marquee repeat">
+      </div>
+    </div>
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_1_title.png" class="cover-image" alt="Cover">
+  </section>
+
+  <!-- 2~4단락 -->
+  <div class="section section-upslide">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_2-1.png" alt="2-1 Image">
+  </div>
+  <div class="section section-upslide">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_2-2-2.png" alt="2-2 Image">
+  </div>
+  <div class="section section-upslide">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_3-2-.png" alt="3 Image">
+  </div>
+  <div class="section section-upslide">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_4.png" alt="4 Image">
+  </div>
+
+  <!-- 5단락 -->
+  <section class="section section-marquee-5">
+    <div class="marquee-content">
+      <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_mo_5.png" alt="Marquee">
+      <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_mo_5.png" alt="Marquee repeat">
+      <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_mo_5.png" alt="Marquee repeat">
+    </div>
+  </section>
+
+    <!-- 6단락 -->
+    <table>
+      <tr>
+        <td>
+          <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-with-dyneema%C2%AE/3087/category/112/display/1/">
+            <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_6-1__.png" width="360" height="500" alt="6-1 Image">
+          </a>
+        </td>
+        <td>
+          <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-with-dyneema%C2%AE/3086/category/112/display/1/">
+            <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_6-2__.png" width="360" height="500" alt="6-2 Image">
+          </a>
+        </td>
+        <td>
+          <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%8B%A0%ED%86%A8%EB%9D%BC-with-dyneema%C2%AE/3040/category/112/display/1/">
+            <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_6-3__.png" width="360" height="500" alt="6-3 Image">
+          </a>
+        </td>
+        <td>
+          <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%8B%A0%ED%86%A8%EB%9D%BC-with-dyneema%C2%AE/3039/category/112/display/1/">
+            <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_6-4__.png" width="360" height="500" alt="6-4 Image">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+  <!-- 7단락 -->
+  <div class="section section-upslide">
+    <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_7-1.png" alt="7 Image">
+  </div>
+
+  <!-- 8단락 -->
+  <table>
+    <tr>
+      <td>
+        <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%BD%94%EB%A5%B4%ED%86%A0/3102/category/56/display/1/">
+          <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_8-1_.png" width="360" height="500" alt="8-1 Image">
+        </a>
+      </td>
+      <td>
+        <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%BD%94%EB%A5%B4%ED%86%A0/3101/category/56/display/1/">
+          <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_8-2_.png" width="360" height="500" alt="8-2 Image">
+        </a>
+      </td>
+      <td>
+        <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%BD%94%EB%A5%B4%ED%86%A0/3100/category/56/display/1/">
+          <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_8-3_.png" width="360" height="500" alt="8-3 Image">
+        </a>
+      </td>
+      <td>
+        <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%8B%A0%ED%86%A8%EB%9D%BC/3042/category/56/display/1/">
+          <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_8-4_.png" width="360" height="500" alt="8-4 Image">
+        </a>
+      </td>
+      <td>
+        <a href="https://hydrogenofficial.com/product/%EB%89%B4%ED%8A%B8%EB%A1%A0-%EC%8B%A0%ED%86%A8%EB%9D%BC/3041/category/56/display/1/">
+          <img src="https://creashd.cafe24.com/showcase/dyneema/250423_hd_pc_8-5_.png" width="360" height="500" alt="8-5 Image">
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const upslideElements = document.querySelectorAll('.section-upslide');
+      upslideElements.forEach(function (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) {
+          el.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
