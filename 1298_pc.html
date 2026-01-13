@@ -1,89 +1,90 @@
 <div class="container" id="contents">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- #1218 이벤트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- #1218 이벤트 -->
 
-    <section class="__1218_wrap">
-        <article class="__1218_box1">
-            <div class="img-box">
-                <div class="img img1">
-                    <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc.png" alt="">
-                </div>
-            </div>
+  <section class="__1218_wrap">
+      <article class="__1218_box1">
+          <div class="img-box">
+              <div class="img img1">
+                  <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_2222.png" alt="">
+              </div>
+          </div>
 
-            <!-- ✅ box3를 box1 내부로 이동 -->
-            <article class="__1218_box3">
-                <div class="infinite-slider">
-                    <div class="slider-track">
-                        <div class="img img2">
-                            <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
-                        </div>
-                        <div class="img img2">
+          <!-- ✅ box3를 box1 내부로 이동 -->
+          <article class="__1218_box3">
+              <div class="infinite-slider">
+                  <div class="slider-track">
+                      <div class="img img2">
+                          <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
+                          <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
+                          <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
+                          <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
+                          <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
                           <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
                       </div>
-                      <div class="img img2">
-                        <img src="https://creas-mall.s3.amazonaws.com/planning/2026/01/1298/1298_1_pc_shoe.png" alt="">
-                    </div>
-                    </div>
-                </div>
-            </article>
-        </article>
-    </section>
 
-    <!-- css -->
-    <style>
-        .HTMLContent_editorWrap__qsT_v .__1218_wrap *{max-width:none !important}
 
-        .__1218_wrap { overflow:hidden; position:relative; font-size:0; }
-        .__1218_box1{ position:relative; overflow:hidden; width:100%; }
-        .__1218_box1 .img { position:relative; width:100%; }
-        .__1218_box1 .img img { width:100%; }
-        .__1218_box1 .img-box{ position:relative; float:right; width:100%; }
-        .__1218_box1 .txt1{ position:absolute; top:7.3%; right:4.9%; width:71.8% }
+                  </div>
+              </div>
+          </article>
+      </article>
+  </section>
+
+  <!-- css -->
+  <style>
+      .HTMLContent_editorWrap__qsT_v .__1218_wrap *{max-width:none !important}
+
+      .__1218_wrap { overflow:hidden; position:relative; font-size:0; }
+      .__1218_box1{ position:relative; overflow:hidden; width:100%; }
+      .__1218_box1 .img { position:relative; width:100%; }
+      .__1218_box1 .img img { width:100%; }
+      .__1218_box1 .img-box{ position:relative; float:right; width:100%; }
+      .__1218_box1 .txt1{ position:absolute; top:7.3%; right:4.9%; width:71.8% }
 
 /* ✅ box3 overlay가 box1을 정확히 따라 줄어들게 (반응형) */
 .__1218_wrap .__1218_box1 { position: relative; }
 
 .__1218_wrap .__1218_box1 .__1218_box3{
-  position: absolute !important;
-  inset: 0 !important;        /* top/right/bottom/left = 0 */
-  width: 100% !important;
-  height: 100% !important;    /* box1의 세로에 맞춰서 같이 줄어듦 */
-  z-index: 10 !important;
-  pointer-events: none;       /* 클릭 막힘 방지(필요시 제거) */
+position: absolute !important;
+inset: 0 !important;        /* top/right/bottom/left = 0 */
+width: 100%; !important;
+height: 100% !important;    /* box1의 세로에 맞춰서 같이 줄어듦 */
+z-index: 10 !important;
+pointer-events: none;       /* 클릭 막힘 방지(필요시 제거) */
 }
 
 /* 안쪽 래퍼들 모두 부모 높이를 그대로 상속 */
 .__1218_wrap .__1218_box1 .__1218_box3 .infinite-slider{
-  position: absolute !important;
-  inset: 0 !important;
-  overflow: hidden !important;
+position: absolute !important;
+inset: 0 !important;
+overflow: hidden !important;
 }
 
-.__1218_wrap .__1218_box1 .__1218_box3 .slider-track{
-  display: flex !important;
-  align-items: flex-end !important;
-  height: 100% !important;
-  gap: 30px !important;
-  will-change: transform;
-  animation: infiniteScroll 8s linear infinite !important;
+.__1218_wrap .__1218_box1 .__1218_box3 .slider-track {
+display: flex !important;
+align-items: flex-end !important;
+height: 100% !important;
+will-change: transform;
+animation: infiniteScroll 70s linear infinite !important;
+width: max-content !important;   /* 아이템이 몇 개든 실제 크기만큼 트랙 확장 */
 }
 
 /* 슬라이드 아이템과 이미지가 '세로 100%' 기준으로 축소/확대 */
-.__1218_wrap .__1218_box1 .__1218_box3 .img{
-  flex: 0 0 auto !important;
-  height: 100% !important;
+.__1218_wrap .__1218_box1 .__1218_box3 .img {
+flex: 0 0 auto !important;
+height: 100% !important;   /* 부모 높이에 맞추고 */
+display: flex !important; 
+align-items: flex-end !important; /* 신발 아랫부분을 바닥에 맞춤 */
 }
 
-.__1218_wrap .__1218_box1 .__1218_box3 .img img{
-  display: block !important;
-  height: 100% !important;  /* 세로 기준으로 맞춤 */
-  width: auto !important;   /* 가로는 비율 유지 */
+.__1218_wrap .__1218_box1 .__1218_box3 .img img {
+height: 100% !important;   /* 세로 꽉 채움 */
+width: auto !important;    /* 가로는 비율 유지 */
+object-fit: contain !important; /* 원본 비율 그대로 */
 }
-
-/* ※ 동일 너비 3장 기준 무한 스크롤 */
 @keyframes infiniteScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-33.333%); }
+0%   { transform: translateX(0); }
+100% { transform: translateX(-100%); } /* 트랙 전체 길이만큼 이동 */
 }
-    </style>
+  </style>
 </div>
