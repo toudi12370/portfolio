@@ -15,26 +15,19 @@
                     </div>
                 </div>
             </article>
-        </section>
+ 
+            <article class="__1218_box1">
+                <div class="img-box">
+                    <div class="img img1">
+                        <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_bg.png" alt="">
+                    </div>
+                    <div class="img txt1 fadeIn">
+                        <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_text2.png" alt="">
+                    </div>
+                    <div class="img txt1 fadeIn">
+                        <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_text3.png" alt="">
+                    </div>
 
-        <section class="__1708_section2">
-            <article class="sec2_inner">
-        
-                <!-- 배경 -->
-                <div class="bg">
-                    <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_bg.png">
-                </div>
-        
-                <!-- 텍스트 -->
-                <div class="layer transformdown delay-1">
-                    <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_text2.png">
-                </div>
-        
-                <div class="layer transformdown delay-2">
-                    <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/pc_text3.png">
-                </div>
-        
-                <!-- b_img 순차 등장 -->
                 <div class="layer transformdown delay-3">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img2.png">
                 </div>
@@ -43,27 +36,27 @@
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img3.png">
                 </div>
         
-                <div class="layer transformdown" style="transition-delay:1.6s">
+                <div class="layer transformdown delay-5">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img4.png">
                 </div>
         
-                <div class="layer transformdown" style="transition-delay:1.9s">
+                <div class="layer transformdown delay-6">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img5.png">
                 </div>
         
-                <div class="layer transformdown" style="transition-delay:2.2s">
+                <div class="layer transformdown delay-7">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img6.png">
                 </div>
         
         
-                <div class="layer transformdown" style="transition-delay:2.8s">
+                <div class="layer transformdown delay-8">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img8.png">
                 </div>
         
-                <div class="layer transformdown" style="transition-delay:3.1s">
+                <div class="layer transformdown delay-9">
                     <img src="https://creas-mall.s3.amazonaws.com/planning/2026/03/1708/pc/b_img9.png">
                 </div>
-        
+                </div>
             </article>
         </section>
         
@@ -76,11 +69,10 @@
             .playVideo video{width: 100%;}
             .fadeIn, .transformdown, .transformDown, .transformLeft, .transformRight { opacity:0; transition:all .7s ease-in-out; }
             .transformZoom { transform:scale(0); opacity:0; }
-            .transformdown { transform:translateY(-30%); }
+            .transformdown { transform:translateY(30%); }
             .transformDown { transform:translateY(30%); }
             .transformLeft { transform:translateX(-30%); }
             .transformRight { transform:translateX(30%); }
-            .transformZoom { transform:scale(1.2); }
             .fadeIn.transform, .transformdown.transform, .transformDown.transform, .transformLeft.transform, .transformRight.transform, .transformZoom.transform { transform:none; opacity:1; }
             .fadeOut.transform { opacity:0;transition:all .7s ease-in-out; }
             .transformDown_1 { transition:all .7s ease-in-out; }
@@ -88,7 +80,14 @@
             .delay-1{transition-delay:.3s !important;}
             .delay-2{transition-delay:.7s !important;}
             .delay-3{transition-delay:1.3s !important;}
-            .delay-4{transition-delay:1.2s !important;}
+            .delay-4{transition-delay:1.4s !important;}
+            .delay-5{transition-delay:1.8s !important;}
+            .delay-6{transition-delay:2.2s !important;}
+            .delay-7{transition-delay:2.6s !important;}
+            .delay-8{transition-delay:3s !important;}
+            .delay-9{transition-delay:3.4s !important;}
+            .delay-10{transition-delay:3.8s !important;}
+
             .duration-1{transition-duration:.5s !important;}
             .duration-2{transition-duration:1s !important;}
             .duration-3{transition-duration:1.5s !important;}
@@ -160,35 +159,18 @@
     to   { opacity: 1; }
 }
 
-/* ===== 추가 섹션 ===== */
-
-.__1708_section2{
-    position:relative;
-    overflow:hidden;
-}
-
-.__1708_section2 .sec2_inner{
-    position:relative;
-    width:100%;
-}
-
-.__1708_section2 .bg img{
-    width:100%;
-    display:block;
-}
-
-/* 레이어 공통 */
-.__1708_section2 .layer{
+.__1218_box1 .layer{
     position:absolute;
     top:0;
     left:0;
     width:100%;
+    z-index:3;
 }
 
-.__1708_section2 .layer img{
-    width:100%;
-    display:block;
-}
+.__1218_box1 .img1 { z-index:1; }
+.__1218_box1 .txt1 { z-index:2; }
+.__1218_box1 .layer { z-index:3; }
+
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.17.1/video-js.min.css" type="text/css">
         <!-- /css -->
@@ -296,20 +278,24 @@
     asideFocusItStickyActive();
     setTextMotionIntersection();
 
-    /* ===== 인트로 실행 ===== */
-    const bg = document.querySelector('.__1218_box1 .img1');
-    const txt = document.querySelector('.__1218_box1 .txt1');
+    /* ===== 인트로 실행 (모든 섹션 적용) ===== */
+    const sections = document.querySelectorAll('.__1218_box1');
 
-    if(bg){
-        setTimeout(()=>{
-            bg.classList.add('introZoom');
+    sections.forEach((section, i) => {
+        const bg = section.querySelector('.img1');
+        const txts = section.querySelectorAll('.txt1');
 
-            /* 배경 애니 끝난 뒤 텍스트 등장 */
+        if(bg){
             setTimeout(()=>{
-                if(txt) txt.classList.add('introFade');
-            }, 900); // 줌 duration보다 살짝 짧게/같게
-        }, 100);
-    }
+                bg.classList.add('introZoom');
+
+                setTimeout(()=>{
+                    txts.forEach(t => t.classList.add('introFade'));
+                }, 900);
+
+            }, 100 + (i * 200)); // 섹션마다 살짝 딜레이
+        }
+    });
 }
         </script>
         <!-- /js -->
